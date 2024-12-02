@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.Windows.WinmdGenerator/0.63.31-preview">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup Label="Globals">
+	    <OutputWinmd>../.windows/out.winmd</OutputWinmd>
+        <WinmdVersion>255.255.255.255</WinmdVersion>
+        <AdditionalIncludes>../webauthn/experimental</AdditionalIncludes>
+        <SdkIncRoot>obj\CompiledHeaders</SdkIncRoot>
+        <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+        <ScanArch>arm64</ScanArch>
+    </PropertyGroup>
+    <ItemGroup>
+        <Idls Include="..\webauthn\experimental\pluginauthenticator.idl" />
+        <Partition Include="pluginauthenticator.cpp">
+            <TraverseFiles>../webauthn/experimental/webauthnpriv.h;$(CompiledHeadersDir)\pluginauthenticator.h</TraverseFiles>
+            <Namespace>Windows.PluggablePasskeys</Namespace>
+        </Partition>
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="libclang" Version="17.0.4" />
+      <PackageReference Include="libclang.runtime.win-arm64" Version="17.0.4" />
+      <PackageReference Include="libclang.runtime.win-x64" Version="17.0.4" />
+      <PackageReference Include="libclangsharp.runtime.win-arm64" Version="17.0.4" />
+      <PackageReference Include="libclangsharp.runtime.win-x64" Version="17.0.4" />
+    </ItemGroup>
+</Project>

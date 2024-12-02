@@ -1,0 +1,16 @@
+[package]
+name = "rusty-contoso-passkeys"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.windows-core]
+version = "0.58"
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "Win32_System_Com"
+]
+
+[dev-dependencies.windows-bindgen]
+version = "0.58"
