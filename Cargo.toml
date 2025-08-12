@@ -12,7 +12,7 @@ features = [
     "Win32_System_Com"
 ]
 
-[dev-dependencies.windows-bindgen]
+[build-dependencies.windows-bindgen]
 version = "0.62.1"
 
 [dependencies.windows-link]
