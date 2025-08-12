@@ -6,3 +6,6 @@ Info:
 * clean using `dotnet clean`
 * Requires Visual Studio 2022 community edition NOT BUILD TOOLS
 * Dependencies: https://github.com/microsoft/win32metadata/blob/2e6b61977d4b7f5f852637bb7c2d121d1d687a96/configurations/configuration.dsc.yaml
+
+* This only works on AMD64 machines, due to dotnet and tooling issues, you can't build the WinMD from an ARM64 machine.
+* You also need to enable unsigned powershell scripts on your machine for this to work.
