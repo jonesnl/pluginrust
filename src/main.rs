@@ -4,13 +4,12 @@ mod bindings;
 fn bindgen() {
     let args = [
         "--in",
+        "default",
         ".windows/out.winmd",
         "--filter",
         "Windows.PluggablePasskeys",
         "--out",
         "src/bindings.rs",
-        "--config",
-        "flatten",
     ];
 
     windows_bindgen::bindgen(args).unwrap();
