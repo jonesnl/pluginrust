@@ -4,7 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
     </PropertyGroup>
     <PropertyGroup Label="Globals">
-	    <OutputWinmd>../.windows/out.winmd</OutputWinmd>
+	    <OutputWinmd>../.windows/pluginauthenticator.winmd</OutputWinmd>
         <WinmdVersion>255.255.255.255</WinmdVersion>
         <AdditionalIncludes>../webauthn/experimental</AdditionalIncludes>
         <SdkIncRoot>obj\CompiledHeaders</SdkIncRoot>

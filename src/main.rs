@@ -5,7 +5,7 @@ fn bindgen() {
     let args = [
         "--in",
         "default",
-        ".windows/out.winmd",
+        ".windows/pluginauthenticator.winmd",
         "--filter",
         "Windows.PluggablePasskeys",
         "--out",
