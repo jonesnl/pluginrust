@@ -1,3 +1,6 @@
+#[allow(unused)]
+use rusty_contoso_passkeys_bindings as bindings;
+
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
 #[tauri::command]
 fn greet(name: &str) -> String {

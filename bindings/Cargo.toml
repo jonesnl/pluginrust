@@ -1,5 +1,5 @@
 [package]
-name = "rusty-contoso-passkeys"
+name = "rusty-contoso-passkeys-bindings"
 version = "0.1.0"
 edition = "2021"
 

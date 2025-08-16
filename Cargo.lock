@@ -3001,6 +3001,18 @@ checksum = "b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d"
 name = "rusty-contoso-passkeys"
 version = "0.1.0"
 dependencies = [
+ "rusty-contoso-passkeys-bindings",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-opener",
+]
+
+[[package]]
+name = "rusty-contoso-passkeys-bindings"
+version = "0.1.0"
+dependencies = [
  "windows",
  "windows-bindgen",
  "windows-core",
@@ -3592,17 +3604,6 @@ dependencies = [
  "webview2-com",
  "window-vibrancy",
  "windows",
-]
-
-[[package]]
-name = "tauri-app"
-version = "0.1.0"
-dependencies = [
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-opener",
 ]
 
 [[package]]
